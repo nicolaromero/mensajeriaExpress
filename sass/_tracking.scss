@@ -1,0 +1,53 @@
+/*Tracking.html*/
+
+#tr-sect{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-image: url(../img/BGSEC.png);
+    background-size: cover;
+    margin: 200px;
+    padding: 100px;
+    box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.tr-form-sect form{
+    justify-self: center;
+    align-self: center;
+    padding:20px 10px   ;
+    border-radius: 6px;
+
+}
+
+#busqueda{
+    border: 1px solid $grisPrincipal;
+    border-radius: 6px;
+    box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.3);
+    height: 32px;
+    width: 35vh;
+    background-color: #f2f2f280;
+}
+
+.tr-form-sect input[type="submit"]{
+
+    background: $verdePrincipal;
+    border: 1px solid $grisPrincipal;
+    border-radius: 6px;
+    color: $grisPrincipal;
+    box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.3);
+    margin-top: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+.tr-text{
+    margin: 50px;
+    font-size: 3rem;
+    width: 50%;
+}
+
+.tr-text p strong{
+    color: $verdePrincipal;
+}

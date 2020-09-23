@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Express </title>
+    <!-- Bootsrap CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!--Blog CSS-->
+    <link rel="stylesheet" href="styles-blog.css">
+    <link rel="icon" href="../img/favicon.png" type="image/png"/>
+    <link href="https://fonts.googleapis.com/css2?family=Palanquin+Dark&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7ea180c5c2.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
+            <a class="navbar-brand" href="#"><img src="imgblog/logoblog.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+          
+            <div class="collapse navbar-collapse " id="navbar-collapse">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Inicio<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Articulos</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mensajeria Express</a>
+                  <div class="dropdown-menu" aria-labelledby="dropdown01">
+                      <ul class="ul-dropd">
+                        <li><a class="dropdown-item" href="../index.html">Inicio</a></li>
+                        <li><a class="dropdown-item" href="../secciones/tracking.html">Tracking</a></li>
+                        <li><a class="dropdown-item" href="../secciones/servicios.html">Servicios</a></li>
+                        <li><a class="dropdown-item" href="../secciones/partners.html">Partners</a></li>
+                        <li><a class="dropdown-item" href="../secciones/contacto.html">Contacto</a></li>
+                      </ul> 
+                  </div>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Buscar Articulos" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+              </form>
+            </div>
+        </nav>
+    </header>
+
+    <main role="main">
+        <div class="welcome">
+          <div class="container-fluid">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="container">
+                    <h2 class="display-4">¡Amazon!</h2>
+                    <p class="p-welcome">¡Queriamos sorprenderlos! En Mensajeria Express estamos felices de contarles que muy pronto estara disponible el servicio de courier, para que recibas tus compras en EEUU y enviarlas al pais.</p>
+                    <p><a class="btn btn-success btn-lg" href="#" role="button">Leer mas &raquo;</a></p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="container">
+                    <h2 class="display-4">¡Actualizacion App!</h2>
+                    <p class="p-welcome">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae dignissimos earum soluta commodi, voluptatum repellat vel cumque officia eum reiciendis quaerat ut itaque quia vero deleniti nostrum quo, voluptas quos!.</p>
+                    <p><a class="btn btn-success btn-lg" href="#" role="button">Leer mas &raquo;</a></p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="container">
+                    <h2 class="display-4">¡Retiros en cuarentena!</h2>
+                    <p class="p-welcome">Sit amet consectetur, adipisicing elit. Deleniti, eos! Eaque eum nemo minus animi alias deserunt quos, harum aliquid nihil, laboriosam fuga ea quod.</p>
+                    <p><a class="btn btn-success btn-lg" href="#" role="button">Leer mas &raquo;</a></p>
+                  </div>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-caret-left-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3.86 8.753l5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/>
+                </svg>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-caret-right-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                </svg>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+    </main>    
+    <section class="articles">
+      <div id="carouseltwo" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4">
+                  <h2>Amazon</h2>
+                  <p>¡Queriamos sorprenderlos! En Mensajeria Express estamos felices de contarles que muy pronto estara disponible el servicio de courier, para que recibas tus compras en EEUU y enviarlas al pais.</p>
+                  <p><a class="btn btn-secondary" href="#" role="button">Leer mas &raquo;</a></p>
+                </div>
+                <div class="col-md-4">
+                  <h2>Actualizacion App</h2>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam, sunt. Doloribus dignissimos rem nisi, nesciunt sit exercitationem autem numquam ipsa tempora ex cumque temporibus quasi eaque veritatis rerum aperiam est!</p>
+                  <p><a class="btn btn-secondary" href="#" role="button">Leer mas &raquo;</a></p>
+                </div>
+                <div class="col-md-4">
+                  <h2>Retiros en cuarentena</h2>
+                  <p>adipisicing elit. Quam cumque animi delectus amet nostrum tempore ipsa assumenda, molestias, accusantium culpa tenetur unde? Voluptatem nostrum unde velit aut eligendi necessitatibus. Amet.</p>
+                  <p><a class="btn btn-secondary" href="#" role="button">Leer mas &raquo;</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4">
+                  <h2>Ebay</h2>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed incidunt ea culpa illum.</p>
+                  <p><a class="btn btn-secondary" href="#" role="button">Leer mas &raquo;</a></p>
+                </div>
+                <div class="col-md-4">
+                  <h2>Newegg</h2>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam, sunt. Doloribus dignissimos rem nisi, nesciunt sit exercitationem autem numquam ipsa tempora ex cumque temporibus quasi eaque veritatis rerum aperiam est!</p>
+                  <p><a class="btn btn-secondary" href="#" role="button">Leer mas &raquo;</a></p>
+                </div>
+                <div class="col-md-4">
+                  <h2>Waltmart</h2>
+                  <p>adipisicing elit. Quam cumque animi delectus amet nostrum tempore ipsa assumenda, molestias, accusantium culpa tenetur unde? Voluptatem nostrum unde velit aut eligendi necessitatibus. Amet.</p>
+                  <p><a class="btn btn-secondary" href="#" role="button">Leer mas &raquo;</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4">
+                  <h2>UPS</h2>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, quisquam.</p>
+                  <p><a class="btn btn-secondary" href="#" role="button">Leer mas &raquo;</a></p>
+                </div>
+                <div class="col-md-4">
+                  <h2>Impuestos y aduanas.</h2>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam, sunt. Doloribus dignissimos rem nisi, nesciunt sit exercitationem autem numquam ipsa tempora ex cumque temporibus quasi eaque veritatis rerum aperiam est!</p>
+                  <p><a class="btn btn-secondary" href="#" role="button">Leer mas &raquo;</a></p>
+                </div>
+                <div class="col-md-4">
+                  <h2>Nueva Sucursal</h2>
+                  <p>adipisicing elit. Quam cumque animi delectus amet nostrum tempore ipsa assumenda, molestias, accusantium culpa tenetur unde? Voluptatem nostrum unde velit aut eligendi necessitatibus. Amet.</p>
+                  <p><a class="btn btn-secondary" href="#" role="button">Leer mas &raquo;</a></p>
+                </div>
+              </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouseltwo" role="button" data-slide="prev">
+          <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-caret-left-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3.86 8.753l5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/>
+          </svg>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouseltwo" role="button" data-slide="next">
+          <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-caret-right-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+          </svg>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </section>
+    
+    <section class="newsletter">  
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <div class=" news-text ">
+                        <p class="align-middle">Descubre todas las novedades que tenemos</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <form class=" align-middle form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="text" placeholder="Ingresa tu E-mail" aria-label="Search">
+                        <button type="button" class="btn btn-outline-success my-2 my-sm-0" data-toggle="modal" data-target="#blogModal">Newsletter</button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="blogModal" tabindex="-1" aria-labelledby="blogModal" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-body">
+                                <p class="text-modal">Gracias por suscribirte!</p>
+                                <img class="img-modal" src="imgblog/modal.svg" alt="">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>   
+    </section>
+    <footer>
+        <div class="container cont-footer">
+            <div class="row">
+                <div class="col-xl-6 rrss">
+                    <a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fab fa-instagram-square"></i></a>
+                    <a href="https://twitter.com/"><i class="fab fa-twitter-square"></i></a>
+                </div>   
+                <div class="col-xl-6">
+                    <div class="datos">
+                        <a href="https://goo.gl/maps/rkHV3UyFHc7YkUkC7" target="_blank"><i class="fas fa-map-marker-alt"></i>  Dardo Rocha 25, Martinez</a></p>
+                        <a href="tel:+5491146777000" target="_blank"><i class="fas fa-phone"></i> 4677-7000</a></p>
+                        <a href="mailto:hola@mensajeriaexpress.com" target="_blank"><i class="fas fa-at"></i> hola@mensajeriaexpress.com</a></p>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </footer>  
+   <!-- Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script> 
+</body>
+</html>

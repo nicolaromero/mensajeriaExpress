@@ -1,0 +1,144 @@
+/*Estilos Generales*/
+
+.btn-success{
+    background-color: #2ecc71;
+    border-color: #2ecc71;
+}
+
+body{
+    background-color: #f2f2f2;
+    font-family: 'Palanquin Dark', sans-serif;
+}
+
+/*NAV*/
+
+.logo-blog{
+    width: 50%;
+}
+
+.ul-dropd{
+    list-style: none;
+    padding: 0;
+}
+
+.btn-outline-success{
+    border-color: #2ecc71;
+}
+
+.btn-outline-success:hover{
+    border-color: #2ecc71;
+    background-color: #2ecc71;
+}
+
+/*Main*/
+
+.carousel-control-prev,
+.carousel-control-next {
+    color: black;
+}
+
+.welcome{
+    padding: 13rem 2rem;
+    /*background: rgb(242,242,242);
+    background: radial-gradient(circle, rgba(242,242,242,0) 35%, rgba(246,223,210,1) 100%);*/
+    background-image: url(../img/servicesbg.png);
+    background-size: cover;
+}
+
+.p-welcome{
+    font-size: 2rem;
+}
+
+/*Articulos*/
+
+.articles{
+    background: rgb(242,242,242);
+    background: radial-gradient(circle, rgba(242,242,242,0) 35%, rgba(246,223,210,1) 100%);
+    padding: 10rem 2rem;
+}
+
+/*Newsletter*/
+
+.newsletter{
+    padding:7rem 2rem 0 2rem;
+}
+
+.news-text{
+    text-align: end;
+    align-self: center;
+}
+
+/*Modal*/
+.modal-body{
+    background-color: #f2f2f2;
+    border-radius: 10px;
+}
+
+.text-modal{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.img-modal{
+    animation: ilustrationAnimate ease-in 1s infinite alternate;
+}
+
+@keyframes ilustrationAnimate{
+    0%{
+        transform: scale(1);
+    }
+
+    100%{
+        transform: scale(1.04);
+    }
+}
+
+/*Footer*/
+
+footer{ 
+    background-image: url(imgblog/blogbgfooter.png);
+    background-size: cover;
+}
+.cont-footer{
+    padding-top: 14rem;
+    padding-bottom: 5rem;
+}
+
+.cont-footer a {
+    color: black;
+}
+
+.cont-footer a:hover{
+    color: #2ecc71;
+    text-decoration: none;
+    transition: ease-in 0.2s;
+}
+
+.datos{
+    font-size: 1.3rem;
+}
+
+.rrss{
+    text-align: end;
+    font-size: 3rem;
+}
+
+@media screen and (max-width:800px){
+
+    .p-welcome{
+        font-size: 2rem;
+    }
+
+    .cont-footer{
+        padding-bottom: 0.5rem;
+    }
+    .datos{
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .rrss{
+        font-size: 1rem;
+        text-align: center;
+    }
+}

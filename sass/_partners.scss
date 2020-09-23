@@ -1,0 +1,36 @@
+/*Partners.html*/
+
+.secpartners h1{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.secpartners h1 span{
+    color: $verdePrincipal;
+}
+
+.grid-secpartners{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: 100vh;
+    column-gap: 3vh;
+    padding: 50px;
+
+}
+
+.partnersec{
+    display: grid;
+    grid-template-rows: 30% 60%;
+    border-radius: 20px;
+    box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    font-size: 1.6rem;
+    background-color: $grisPrincipal;
+
+}
+.secpartners div img {
+    width: 200px;
+    justify-self: center;
+    align-self: center;
+
+}

@@ -1,0 +1,40 @@
+/*Services.html*/
+
+.secservices h1{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.secservices h1 span{
+    color: $verdePrincipal;
+}
+
+
+.sec-puerta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:5vh 10vh;
+    font-size: 1.1rem;
+}
+
+.sec-retiro{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    padding:5vh 20vh;
+    font-size: 1.1rem;
+}
+
+.sec-ecomm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:5vh 10vh;
+    font-size: 1.1rem;
+}
+
+.imgservsec{
+    padding: 5vh;    
+}

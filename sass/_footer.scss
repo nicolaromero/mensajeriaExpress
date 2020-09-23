@@ -1,0 +1,70 @@
+/*Newsletter*/
+/*Comparten todos los HTML*/
+
+.newsletter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+
+.news-text{
+    font-size: 2vh;
+    padding-right: 20px;
+}
+
+#newsletter{
+    border: 1px solid $grisPrincipal;
+    border-radius: 6px;
+    box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.3);
+    height: 32px;
+    width: 40vh;
+    background-color: #f2f2f280;
+}
+
+.formnewsletter input[type="submit"]{
+
+    background: $verdePrincipal;
+    border: 1px solid $grisPrincipal;
+    border-radius: 6px;
+    color: $grisPrincipal;
+    box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.3);
+    margin-top: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/*Footer comparten todos los HTML*/
+/*Footer*/
+
+.pie{
+    background: rgb(242,242,242);
+    background: radial-gradient(circle, rgba(242,242,242,0) 35%, rgba(246,223,210,1) 100%);
+}
+
+.pie-grid{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    padding: 5vh;
+}
+
+.datos a{
+    color: #000000;
+}
+
+.datos a:hover{
+    color: $verdePrincipal;
+    transition: ease-in 0.4s;
+}
+
+.rrss a{
+    padding: 10px;
+    font-size: 40px;
+    color: #000000;
+}
+
+.rrss a:hover{
+    color: $verdePrincipal;
+    transition: ease-in 0.4s;
+}

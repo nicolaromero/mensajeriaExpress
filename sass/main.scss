@@ -1,0 +1,18 @@
+/*VARIABLES*/
+@import "_variables.scss";
+@import "_placeholders.scss";
+/*ANIMACIONES*/
+@import "_animaciones.scss";
+/*RESETEO*/
+@import "_reset.scss";
+/*NAV & FOOTER ((COMPARTEN TODAS LAS SECCIONES)) */
+@import "_nav.scss";
+@import "_footer.scss";
+/*SECCIONES*/
+@import "_index.scss";
+@import "_tracking.scss";
+@import "_servicios.scss";
+@import "_partners.scss";
+@import "_contacto.scss";
+/*MEDIA*/
+@import "_mobile.scss";

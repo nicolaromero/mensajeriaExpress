@@ -1,0 +1,16 @@
+%btn-saberMas {
+    display: inline-block;
+    font-size: 1.5vh;
+    border: 1px solid #5a5a6e;
+    border-radius: 5px;
+    padding: 6px;
+    transition: ease-in 0.2s;
+
+    &:hover{
+        cursor: pointer;
+        background-color: #5a5a6e;
+        color: $grisPrincipal;
+        border: 1px solid $grisPrincipal;
+        transition: ease-in 0.4s;
+    }
+}

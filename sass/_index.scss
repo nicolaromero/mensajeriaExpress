@@ -1,0 +1,167 @@
+/*index.html*/
+/*Presentacion header*/
+
+.present{
+    /*display: grid;
+    grid-template-columns: 50% 50%;*/
+    display: flex;
+    background-image: url(../img/bg2.png);
+    background-size: cover;
+}
+
+.present img{
+    margin: 50px 0 50px 100px;
+    height: 100vh;
+    width: 100vh;
+}
+
+.present p{
+    font-weight: 600;
+    font-size: 15vh;
+    line-height: 13vh;
+    margin: 50px 100px 50px 100px;
+    
+}
+
+.present span{
+    color: $grisPrincipal;
+}
+
+/*Services Index*/
+
+#services{
+    background: rgb(242,242,242);
+    background: radial-gradient(circle, rgba(242,242,242,0) 35%, rgba(246,223,210,1) 100%);
+}
+
+#services h2{
+    text-align: center;
+    padding: 5vh;
+    font-size: $tituloSeccion;
+    font-weight: 600;
+}
+
+#services h2 span{
+    color: $verdePrincipal;
+}
+
+.fa-parachute-box{
+    transform: translatey(0px);
+    animation: float 6s ease-in-out infinite;
+ }
+
+.title{
+    font-size: 5vh;
+}
+
+.imgserv{
+    height: auto;
+    width: auto;
+    padding: 5vh 15vh;
+}
+
+.btnmas{
+    @extend %btn-saberMas;
+}
+
+.puerta, .ecomm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.retiro{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    margin: 5vh;
+}
+
+/*Partners-Index*/
+
+.partners{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+    .float{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 150px;
+
+        h2{
+            font-size: $tituloSeccion;
+            font-weight: 600;
+
+            span{
+                color: $verdePrincipal;
+            }
+        }    
+
+        .float1, .float2{
+            width: 7%;  
+            animation: float 6s ease-in-out infinite;
+        }
+
+    }
+    .partners-items{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        align-items: center;
+
+        .partners-content a img{
+            max-width: 200px;
+            filter: grayscale(100%);
+
+            &:hover{
+                filter: grayscale(0%);
+                transition: ease-in 0.4s;
+            }
+        }
+
+    }
+}
+    
+
+
+
+/*Reviews index.html*/
+.reviews{
+    margin-top: 10vh;
+    background-image: url(../img/servicesbg.png);
+    background-size: cover;
+}
+
+.grid-rev{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 6%;
+}
+
+.rev{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.rev p{
+    font-size: $tituloSeccion;
+    font-weight: 600;
+    line-height: 7vh;
+    justify-self: center;
+    align-self: center;
+    padding-left: 20px;
+}
+
+.rev p span{
+    color: $verdePrincipal;
+}
+
+.rev-comments{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+    row-gap: 5%;
+}
