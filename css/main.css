@@ -725,7 +725,7 @@ header nav ul li a:hover {
 
   /*FOOTER*/
   #newsletter {
-    width: 250px;
+    width: 100%;
   }
 
   .newsletter {
