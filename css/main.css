@@ -127,7 +127,7 @@ header nav ul li a:hover {
   border-radius: 6px;
   box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.3);
   height: 32px;
-  width: 40vh;
+  width: 350px;
   background-color: #f2f2f280;
 }
 
@@ -376,45 +376,74 @@ header nav ul li a:hover {
   color: #2ecc71;
 }
 
+@media screen and (max-width: 1024px) {
+  #tr-sect {
+    padding: 100px 0;
+    margin: 200px 20px;
+  }
+}
+@media screen and (max-width: 800px) {
+  #tr-sect {
+    margin: 20px;
+    padding: 150px 10px;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  #tr-sect .tr-text {
+    margin: 10px;
+    font-size: 2.5rem;
+    width: 90%;
+    text-align: center;
+  }
+  #tr-sect .tr-form-sect form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
 /*Services.html*/
 .secservices h1 {
   text-align: center;
-  font-size: 2rem;
 }
-
 .secservices h1 span {
   color: #2ecc71;
 }
 
-.sec-puerta {
+.serv-descrip {
+  margin: 4rem 10rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.serv-descrip .sec {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5vh 10vh;
-  font-size: 1.1rem;
+}
+.serv-descrip .sec img {
+  padding: 4rem;
 }
 
-.sec-retiro {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: center;
-  align-items: center;
-  padding: 5vh 20vh;
-  font-size: 1.1rem;
+@media screen and (max-width: 800px) {
+  .serv-descrip {
+    margin: 2rem;
+    flex-direction: column;
+  }
+  .serv-descrip .sec {
+    flex-direction: column;
+    margin: 2rem;
+  }
+  .serv-descrip .sec .imgservsec {
+    padding: 0;
+    width: 60%;
+    height: 60%;
+  }
+  .serv-descrip .papreverse {
+    flex-direction: column-reverse;
+  }
 }
-
-.sec-ecomm {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 5vh 10vh;
-  font-size: 1.1rem;
-}
-
-.imgservsec {
-  padding: 5vh;
-}
-
 /*Partners.html*/
 .secpartners h1 {
   text-align: center;
@@ -449,6 +478,20 @@ header nav ul li a:hover {
   align-self: center;
 }
 
+@media screen and (max-width: 800px) {
+  .grid-secpartners {
+    grid-template-columns: none;
+    grid-template-rows: repeat(4, 1fr);
+    row-gap: 20px;
+    height: 20%;
+  }
+  .grid-secpartners .partnersec {
+    font-size: 1rem;
+  }
+  .grid-secpartners .partnersec img {
+    width: 150px;
+  }
+}
 .bgsec {
   display: flex;
   justify-content: center;
@@ -513,7 +556,6 @@ header nav ul li a:hover {
 }
 
 .formbutton {
-  float: right;
   padding: 8px 12px;
   margin: 8px 0 0;
   border: 2px solid #78788c;
@@ -528,8 +570,19 @@ header nav ul li a:hover {
   transition: ease-in 0.4s;
 }
 
-/*MEDIA*/
 @media screen and (max-width: 800px) {
+  .bgsec {
+    padding: 0;
+    margin: 20px;
+  }
+
+  #formcontact form {
+    padding: 10px;
+    width: 80%;
+  }
+}
+/*MEDIA*/
+@media screen and (max-width: 1024px) {
   * {
     margin: 0px;
     padding: 0px;
@@ -538,6 +591,7 @@ header nav ul li a:hover {
   /*NAV*/
   .bannercovid {
     display: flex;
+    justify-content: center;
   }
 
   #nav {
@@ -574,7 +628,6 @@ header nav ul li a:hover {
   }
   #barranav .closenav a {
     display: inline;
-    z-index: 3;
     font-size: 2.5rem;
     position: fixed;
     top: 0.5%;
@@ -648,6 +701,7 @@ header nav ul li a:hover {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    padding-bottom: 20px;
   }
 
   .puerta,
@@ -670,6 +724,10 @@ header nav ul li a:hover {
   }
 
   /*FOOTER*/
+  #newsletter {
+    width: 250px;
+  }
+
   .newsletter {
     flex-wrap: wrap;
     justify-content: center;

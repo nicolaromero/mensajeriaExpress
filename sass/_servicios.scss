@@ -1,40 +1,49 @@
 /*Services.html*/
-
 .secservices h1{
     text-align: center;
-    font-size: 2rem;
+
+    span{
+        color:$verdePrincipal;
+    }
 }
 
-.secservices h1 span{
-    color: $verdePrincipal;
-}
-
-
-.sec-puerta{
+.serv-descrip{   
+    margin: 4rem 10rem;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding:5vh 10vh;
-    font-size: 1.1rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .sec{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img{
+            padding:4rem;
+        }
+
+    }
+
 }
 
-.sec-retiro{
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    align-items: center;
-    padding:5vh 20vh;
-    font-size: 1.1rem;
-}
+@media screen and (max-width:800px){
+    .serv-descrip{
+        margin: 2rem;
+        flex-direction: column;
 
-.sec-ecomm{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding:5vh 10vh;
-    font-size: 1.1rem;
-}
+        .sec{
+            flex-direction: column;
+            margin: 2rem;
 
-.imgservsec{
-    padding: 5vh;    
+            .imgservsec {
+            padding: 0;
+            width: 60%;
+            height: 60%;
+            }
+        }
+
+        .papreverse{
+            flex-direction: column-reverse;
+        }
+    }
 }

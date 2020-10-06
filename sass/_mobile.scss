@@ -1,4 +1,4 @@
-@media screen and (max-width:800px){
+@media screen and (max-width:1024px){
 
     *{
         margin: 0px;
@@ -9,6 +9,7 @@
 
    .bannercovid{
        display: flex;
+       justify-content: center;
    }
 
    #nav{
@@ -45,7 +46,6 @@
 
             .closenav a{
                 display: inline;
-                z-index: 3;
                 font-size: 2.5rem;
                 position: fixed;
                 top:0.5%;
@@ -129,6 +129,8 @@
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
+        padding-bottom: 20px;
+
     }
 
     .puerta, 
@@ -151,6 +153,10 @@
     }
 
     /*FOOTER*/
+
+    #newsletter{
+        width: 250px;
+    }
 
     .newsletter{
         flex-wrap: wrap;
